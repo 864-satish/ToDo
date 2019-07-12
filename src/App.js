@@ -5,10 +5,6 @@ class App extends Component {
   state = {
         tasks : []
   }
-//   editTask = (index) => {
-//         const {task} = this.state;
-
-//   }
   removeTask = (index) => {
         const {tasks} = this.state;
         if(tasks[index].isCompleted)
