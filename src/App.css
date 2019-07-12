@@ -22,6 +22,27 @@
 .App-link {
   color: #61dafb;
 }
+.completed{
+  color: red;
+  text-decoration: line-through;
+}
+.pending {
+  color: black;
+}
+
+.delete{
+  color: black;
+  -moz-force-broken-image-icon: delete;
+}
+.checkBox {
+  content: "";
+  display: inline-block;
+  
+  height: 40px;
+  width: 40px;
+  
+  border: 1px solid;   
+}
 
 @keyframes App-logo-spin {
   from {
