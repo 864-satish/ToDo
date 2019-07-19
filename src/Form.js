@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import "./App.css"
-// import shortid from 'shortid';
 
 class Form extends Component {
       constructor(props) {
@@ -34,7 +33,7 @@ class Form extends Component {
                                     name='task'
                                     value = {task}
                                     onChange = {this.handleChange}
-                                    placeholder="Whats need to be done?"
+                                    placeholder="What needs to be done?"
                               />
                         </div>
                         {/* <input type="button" value="Submit" onClick = {this.submitFrom}/> */}
