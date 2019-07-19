@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
+import "./App.css"
+// import shortid from 'shortid';
 
 class Form extends Component {
       constructor(props) {
             super(props)
             this.initialState = {
-                  task: '',
-                  isCompleted: false
+                  task: ''
             }
             this.state = this.initialState;
       }
-
       handleChange = (event) => {
             const {name, value} = event.target;
             this.setState({
-                  [name]: value
+                  [name] : value
             })
       }
 
@@ -28,13 +28,16 @@ class Form extends Component {
 
             return(
                  <form onSubmit = {this.submitFrom}>
-                       <label>Task</label>
-                       <input type='text'
-                              name='task'
-                              value = {task}
-                              onChange = {this.handleChange}
-                        />
-                        <input type="button" value="Submit" onClick = {this.submitFrom}/>
+                       <label className="heading">todos</label>
+                       <div>
+                              <input type='text'
+                                    name='task'
+                                    value = {task}
+                                    onChange = {this.handleChange}
+                                    placeholder="Whats need to be done?"
+                              />
+                        </div>
+                        {/* <input type="button" value="Submit" onClick = {this.submitFrom}/> */}
                  </form> 
             )
       }

@@ -22,33 +22,132 @@
 .App-link {
   color: #61dafb;
 }
+.todo{
+  min-width: 400px;
+}
 .completed{
   color: red;
+  text-align: left;
   text-decoration: line-through;
 }
 .pending {
   color: black;
+  text-align: left;
+}
+
+button {
+  border: none;
+  color: darkgrey;
+  font-weight: 300;
+  font-size: 18px;
+
 }
 
 .delete{
   color: black;
   -moz-force-broken-image-icon: delete;
 }
-.checkBox {
-  content: "";
-  display: inline-block;
-  
-  height: 40px;
+ .checkbox{
   width: 40px;
-  
-  border: 1px solid;   
+  height: 40px;
+  color: #61dafb; 
+} 
+.bord{
+  border: 1px solid lightgray;
+  height: 100px;
+  color: #282c34;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.round {
+  float: left;
+  position: relative;
+  margin-left: 5px;
+  margin-bottom: 30px;
+ }
+
+ .round label{
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 100%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: relative;
+  top: 4px;
+  width: 28px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+ }
+ 
+ 
+ .round label:after {
+  border: 2px solid #66bb6a;
+  border-top: 0;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+ }
+ 
+ .round input[type="checkbox"] {
+  visibility: hidden;
+ }
+ 
+ .round input[type="checkbox"]:checked + label {
+  background-color: white;
+  border-color: lightgreen;
+ }
+ 
+ .round input[type="checkbox"]:checked + label:after {
+  opacity: 4;
+ }
+ 
+ .heading {
+  position: relative;
+  text-align: center;
+  color: lightcoral;
+  font-size: 40px;
+  font-weight: 200;
+ } 
+ .bottom{
+   display: inline;
+   position: relative;
+   color: darkgrey;
+   font-size: 15px;
+   margin-right:5px;
+   outline:1px solid transparent;
+ }
+.bottom:focus {
+  outline: 1px solid lightcoral;
+  border-radius: 10px;
 }
+
+
+ p {
+   text-align: center;
+   color: lightgray;
+   font-weight: 20;
+ }
+ 
+
+  .checkboxWidth {
+    width: 20px;
+  }
+
+  .footer2 label {
+    /* Other styling... */
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+  .X {
+    align-items: right;
+    margin-right: 0px;
+  }
